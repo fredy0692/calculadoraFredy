@@ -1,0 +1,141 @@
+﻿//JOSE RIVERA GIRATA
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            width: 550px;
+            margin: 0 auto;
+            border: 25px solid #ccc;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+
+        .output {
+            border: 10px solid #ccc;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: right;
+            font-size: 25px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #e1e1e1;
+            }
+    </style>
+    <script>function addToOutput(value) {
+    document.getElementById("output").value += value;
+}
+
+function clearOutput() {
+    document.getElementById("output").value = "";
+}
+
+function calculate() {
+    try {
+        var result = eval(document.getElementById("output").value);
+        document.getElementById("output").value = result;
+    } catch(err) {
+        document.getElementById("output").value = "Error";
+    }
+}</script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+            <input type="text" id="output" readonly>
+        </div>
+        <div class="buttons">
+            <button onclick="addToOutput('7')">7</button>
+            <button onclick="addToOutput('8')">8</button>
+            <button onclick="addToOutput('9')">9</button>
+            <button onclick="addToOutput('+')">+</button>
+            <button onclick="addToOutput('4')">4</button>
+            <button onclick="addToOutput('5')">5</button>
+            <button onclick="addToOutput('6')">6</button>
+            <button onclick="addToOutput('-')">-</button>
+            <button onclick="addToOutput('1')">1</button>
+            <button onclick="addToOutput('2')">2</button>
+            <button onclick="addToOutput('3')">3</button>
+            <button onclick="addToOutput('*')">*</button>
+            <button onclick="addToOutput('0')">0</button>
+            <button onclick="addToOutput('.')">.</button>
+            <button onclick="clearOutput()">C</button>
+            <button onclick="addToOutput('/')">/</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 115px;
+        }
+
+        input {
+            padding: 4px;
+            margin-bottom: 8px;
+        }
+
+        button {
+            padding: 15px 25px;
+            background-color: #4CAF50;
+            color: blue;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+          
+        .resultado {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+            .resultado span {
+                font-weight: bold;
+            }
+            
+    </style>
+</body>
+</html>

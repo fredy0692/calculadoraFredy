@@ -1,0 +1,26 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+button{
+    cursor: pointer;
+}
+#txtResultado{
+    background-color:aqua;
+}
+button:hover {
+    background-color:blue;
+}
