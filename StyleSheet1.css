@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(imagen.jpg);
+    background-image: url(imagen.jpg); background-repeat: no-repeat;
     width: 100%;
     heigth: 100vh;
 }
