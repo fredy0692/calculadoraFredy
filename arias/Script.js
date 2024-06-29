@@ -53,6 +53,13 @@ btnPunto.addEventListener('click', () => {
     }
 });
 
+btnVolver.addEventListener('click', () => {
+    window.location.href = "INDEX1.html";
+});
+
+function goToIndex() {
+    window.location.href = "INDEX1.html";
+
 btnIgual.addEventListener('click', calcular);
 
 function calcular() {
